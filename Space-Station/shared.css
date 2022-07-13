@@ -3,10 +3,10 @@
     Checkoutmy.space
 ----------------------------------------------
     GENERIC STYLES
--------------------------------------------------
+-------------------------------------------------*/
 html {
     font-family: san-serif;
-    font-size: 62,5%;
+    font-size: 62.5%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -15,7 +15,7 @@ html {
 body {
     font-size: 14px;
     margin: 0;
-    font-family: "Helvetica Neue". Helvetica, Arial, san-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
     line-height: 1.42857143;
     color: #333;
     background-color: #fff;
@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
+h1 { 
     line-height: 50px;
     font-weight: 900;
     font-size: 30px;
@@ -99,6 +99,7 @@ section {
     margin-right: auto;
     margin-left: auto;
 }
+
 .container-fluid {
     padding-right: 15px;
     padding-left: 15px;
@@ -143,25 +144,23 @@ section {
     position: fixed;
     z-index: 100;
     /* background-color: rbga(255, 255, 255, 0.5); */
-
 }
 
 /*---------------------------------------------------------
     HOME SECTION STYLES
-------------------------------------------------------------
-
+------------------------------------------------------------*/
 #home {
-    background: url(.../images/planets.jpg) no-repeat 50% 50%;
+    background: url(../Space-Station/images/Thumb/planets.jpg) no-repeat 50% 50%;
     background-attachment: fixed;
     -webkit-background-size: cover;
-    -mos-background-size: coverl
+    -mos-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     width: 100%
     display: block;
     height: auto;
     padding-top: 350px; /*This is spacer before the Main title Logo */
-    padding-bottom: 350px;
+    padding-bottom: 500px;
     color: #fff;
 }
 
@@ -175,7 +174,7 @@ section {
     text-align: left;
     font-family: impact, sans-serif;
     line-height: 2;
-    fomt-weight: 900;
+    font-weight: 900;
     border: 5px double #fff;
     padding: 10px;
 }
@@ -191,6 +190,7 @@ section {
     font-size: 18px;
     font-weight: 900;
     padding: 5px 20px 20px 20px;
+    border: 1px dotted #fff;
     padding: 5px;
 }
 
@@ -218,7 +218,7 @@ section {
     border-radius: 8px;
     margin: 0px auto;
     background-color: rgba(100, 65, 0, .3);
-    box-shadow: -1px -1px 1px rgba(0, 0, 0, 1), 1px 2px 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: -1px -1px 1px 0 rgba(0, 0, 0, 1), 1px 2px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 .reservation h2 {
@@ -311,7 +311,7 @@ section {
     text-decoration: underline;
 }
 
-.submit input[type="submit"]{
+.submit input[type="submit"] {
     color: rgb(255. 255. 255);
     cursor: pointer;
     border: none;
@@ -323,7 +323,10 @@ section {
     padding: 7px 0px;
     width: 25%;
     font-size: 18px;
-    transition: border-color;
+    transition: border-color 0.3s color 0.3s background-color 0.3s;
+    border-radius: 7px;
+    background-color: #797a7b;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
 .submit input[type="submit"]:hover {
@@ -351,7 +354,6 @@ section {
         font-size: 28px;
     }
 }
-
 @media all and (max-width: 381px) and (min-width:200px) {
     .head-main {
         font-size: 24px;
@@ -363,115 +365,13 @@ section {
         width: 750px;
     }
 }
-
 @media (min-width: 992px) {
     .container {
         width: 970px;
     }
 }
-
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
     }
-}
-
-/*----------------------------------------------------------
-    MENU SECTION ANIMATION
---------------------------------------------------------*/
-.menu {
-    color: #f00;
-    font: bold 12px/18px sans-serif;
-    text-align: center;
-    display: inline;
-    margin: 0% auto;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-}
-
-.menu li {
-    color: #000;
-    background-color: rgba(255, 255, 255, 1);
-    display: inline-block;
-    margin: 0% auto;
-    position: relative;
-    padding: 15px 4%;
-    border: 1px solid #9D9FA2;
-    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
-    border-radius: 6px;
-    /*background-color: #052136;*/
-    cursor: pointer;
-    transition-property: background;
-    transition-duration: .4s;
-    transition-delay: 0s;
-    transition-timing-function: ease-in-out;
-}
-
-.menu li:hover {
-    color: #f00;
-    background-color: rgba(100, 65, 0, .3);
-}
-
-/*----------------------------------------------------
-    GALLERY SECTION ANIMATION
------------------------------------------------*/
-.photo {
-    position: relative;
-    line-height: 0;
-    margin-bottom: 2em;
-    overflow: hidden;
-    border-radius: 8px;
-    padding: 1px;
-    border: 1px solid #021a40;
-    background-color: #ff0;
-    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.7);
-}
-
-.photo-container {
-    text-align: center;
-    margin: 15px auto;
-    width: 300px;
-    height: 169px;
-}
-
-.photo-container img {
-    max-width: 100%;
-    width: 300px;
-    height: 169px;
-}
-
-.photo-overlay {
-    color: #fff;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    justify-content: center; /*for centering text inside .photo-overlay */
-    align-items: center;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.white-head {
-    color: #C9BDAA;
-    margin-top: 5%;
-}
-/*----------------------------------------------------------------
-    Photo Overlay Transitions
-----------------------------------------------------------------*/
-.photo-overlay {
-    opacity: 0;
-    transition: opacity .5s;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.photo-overlay:hover {
-    opacity: 1;
-}
->.photo:hover img {
-    transform: scale(1.1);
 }
