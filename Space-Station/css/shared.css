@@ -150,7 +150,7 @@ section {
     HOME SECTION STYLES
 ------------------------------------------------------------*/
 #home {
-    background: url(../Space-Station/images/Thumb/planets.jpg) no-repeat 50% 50%;
+    background: url(../images/Thumb/planets.jpg) no-repeat 50% 50%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -mos-background-size: cover;
@@ -265,7 +265,7 @@ section {
     font-family: 'Raleway', sans-serif;
 }
 
-.reservation input [type="text"] {
+.reservation input[type="text"] {
     font-size: 15px;
     outline: none;
     font-weight: 600;
